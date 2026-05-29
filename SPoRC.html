@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) goes here for Prod site -->
+    <title>FIT tool: SPoRC</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/nmfs-ost/FIT-graphics/main/FIT_logo/logo_pngs/FIT_favicon_2022_color.png">
+   <link type="text/css" rel="stylesheet" href="./static/main.css" />
+
+</head>
+<body>
+    <div class="container">
+      <div class="mywrap_head">
+          <img src="https://raw.githubusercontent.com/nmfs-ost/FIT-graphics/main/NOAA_logos/noaa-fisheries-rgb-2line-horizontal-small.png" alt="NOAA Fisheries Logo" height="75" >
+      </div>
+      <div class="mywrap_head">
+        <h1 class ="header_title">NOAA Fisheries Integrated Toolbox</h1>
+    </div>
+    <div class ="mywrap_head">
+      <button class="dropbtn" onclick="location.href='/noaa-fit';" value="FIT homepage" >FIT Homepage</button>
+        <div class="dropdown">
+          <button class="dropbtn" value="Resources" >Resources</button>
+            <div class="dropdown-content">
+              <button class="menudropbtn" onclick="location.href='/noaa-fit-resources';" value="Resources Home" >Resources Home</button>
+              <button class="menudropbtn" onclick="location.href='/noaa-fit-resources/categories';" value="Browse by category" >Browse By Category</button>
+              <button class="menudropbtn" onclick="location.href='/noaa-fit-resources/tags';" value="Browse by tag" >Browse By Tag</button>
+            </div>
+        </div>
+      <button class="dropbtn" onclick="location.href='/noaa-fit-resources/about';" value="About" >About</button>
+       <button class="dropbtn" onclick="location.href='/noaa-fit-resources/contact';" value="Contact" >Contact</button>
+    </div>
+    <div class = "divider"></div>
+        <div class="mywrap">
+            
+              <img src="https://github.com/chengmatt/SPoRC/blob/master/man/figures/SPoRC_hex.png?raw=true" alt = "tool logo" height = "75">
+            
+            <h2 class ="title">
+              Tool: SPoRC (SPoRC)
+            </h2>
+        </div>
+        <br>
+        <div class="mywrap">
+              
+                <button class = "codelink nolink" title="Online application unavailable">
+                Online Application
+                </button>
+              
+
+              
+              <button class = "codelink" title="link to download application" onclick=" window.open('https://github.com/chengmatt/SPoRC/releases/latest', '_blank'); return false;">
+                Download Application
+                </button>
+              
+
+              
+               <button class = "codelink" title="link to website" onclick=" window.open('https://chengmatt.github.io/SPoRC/articles/index.html', '_blank'); return false;">
+                Website
+                </button>
+              
+
+
+              
+               <button class = "codelink" title="link to documentation" onclick=" window.open('https://chengmatt.github.io/SPoRC/articles/index.html', '_blank'); return false;">
+                Documentation
+                </button>
+              
+
+              
+               <button class = "codelink" title="link to Code Repository" onclick=" window.open('https://github.com/chengmatt/SPoRC', '_blank'); return false;">
+                Code Repository
+                </button>
+              
+
+
+              <!-- Stop using pdf download because the description is too general to
+              work well for folks using screen readers. -->
+              <!--  -->
+
+              
+              
+              <img class = "versionButton" alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/chengmatt/SPoRC?color=%230093D0&include_prereleases&label=%20">
+              
+
+        </div>
+      <div class = "divider_thin">
+      </div>
+
+
+         
+        
+        <h3>Authors</h3>
+        <p>
+        Matthew Cheng
+        </p>
+        
+
+        
+        <h3>Contributors</h3>
+        <p>
+        Dan Goethel, Curry Cunningham, Pete Hulson
+        </p>
+        
+
+        <h3>Description</h3>
+        <p>
+          SPoRC is a flexible modeling framework for spatially structured population dynamics. It accounts for stochasticity in vital rates and movement among geographically defined components. The framework supports age and sex-structured populations across multiple geographic areas, providing a generalized platform for complex spatial stock assessments.
+        </p>
+
+        
+
+        
+        <h3>
+          Installation Instructions
+        </h3>
+        <p>
+          SPoRC is implemented in RTMB and optionally relies on additional packages for plotting and diagnostics.<br><br>Prerequisites:<br>Ensure the following packages are installed:<code>install.packages("devtools") # Development tools</code><br><code>install.packages("TMB") # Template Model Builder</code><br><code>install.packages("RTMB") # R interface to TMB</code><br>TMB:::install.contrib("https://github.com/vtrijoulet/OSA_multivariate_dists/archive/main.zip") # Optional: multivariate OSA distributions</code><br><code>remotes::install_github("fishfollower/compResidual/compResidual") # Optional OSA residuals</code><br><br>Installing SPoRC:<br><code>devtools::install_github("chengmatt/SPoRC", dependencies = c("Depends", "Imports"))</code>
+        </p>
+        
+
+        
+
+          
+
+          
+          <h3>
+          Citation
+          </h3>
+            <p>Cheng, M. LH., Goethel, D. R., Cunningham, C. J., Hulson, P.-J. F., Ianelli, J. N., & Omori, K. L. (2026). The
+                    <scp>SPoRC</scp>
+                    Stock Assessment Package: A Generalized Next‐Generation Platform to Assess Spatial, Age and Sex‐Structured Populations. Fish and Fisheries, 27(3), 754–770. <a href="https://doi.org/10.1111/faf.70082">https://doi.org/10.1111/faf.70082</a>
+</p>
+          
+          
+          <h3>
+          Code Repository Badges
+          </h3>
+            
+            <img class="software_badge" src="https://codecov.io/gh/chengmatt/SPoRC/graph/badge.svg" alt="codecov test coverage">
+            <br>
+            
+          
+                  
+          <h3>
+          Keywords
+          </h3>
+          
+          <ul>
+          
+            <li>Age Structured Model</li>
+          
+            <li>Decision Support Tool</li>
+          
+            <li>Management Strategy Evaluation</li>
+          
+            <li>Spatial Model</li>
+          
+            <li>Stock Assessment Tool</li>
+          
+          </ul>
+          
+
+          <div class = "divider"></div>
+          <a class = "mylink" href = "https://nmfs-ost.github.io/noaa-fit/site-index">Site Index</a>
+          <div class = "divider"></div>
+        <footer >
+         <img src="https://raw.githubusercontent.com/nmfs-ost/FIT-graphics/main/NOAA_logos/noaa-fisheries-rgb-2line-horizontal-small.png" height="75" alt="NOAA Fisheries">
+         <div class="mywrap_center">
+          <a class ="mylink line" href="https://www.commerce.gov/">U.S. Department of Commerce</a>
+         <a class ="mylink line" href="https://www.noaa.gov">National Oceanographic and Atmospheric Administration</a>
+         <a class ="mylink" href="https://www.fisheries.noaa.gov/">NOAA Fisheries</a>
+         </div>
+
+        </footer>
+        <!-- <div class ="attribution">Icons by icons8 https://icons8.com/</div> -->
+
+    </div>
+
+
+</body>
+</html>
+
