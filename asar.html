@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) goes here for Prod site -->
+    <title>FIT tool: asar</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/nmfs-ost/FIT-graphics/main/FIT_logo/logo_pngs/FIT_favicon_2022_color.png">
+   <link type="text/css" rel="stylesheet" href="./static/main.css" />
+
+</head>
+<body>
+    <div class="container">
+      <div class="mywrap_head">
+          <img src="https://raw.githubusercontent.com/nmfs-ost/FIT-graphics/main/NOAA_logos/noaa-fisheries-rgb-2line-horizontal-small.png" alt="NOAA Fisheries Logo" height="75" >
+      </div>
+      <div class="mywrap_head">
+        <h1 class ="header_title">NOAA Fisheries Integrated Toolbox</h1>
+    </div>
+    <div class ="mywrap_head">
+      <button class="dropbtn" onclick="location.href='/noaa-fit';" value="FIT homepage" >FIT Homepage</button>
+        <div class="dropdown">
+          <button class="dropbtn" value="Resources" >Resources</button>
+            <div class="dropdown-content">
+              <button class="menudropbtn" onclick="location.href='/noaa-fit-resources';" value="Resources Home" >Resources Home</button>
+              <button class="menudropbtn" onclick="location.href='/noaa-fit-resources/categories';" value="Browse by category" >Browse By Category</button>
+              <button class="menudropbtn" onclick="location.href='/noaa-fit-resources/tags';" value="Browse by tag" >Browse By Tag</button>
+            </div>
+        </div>
+      <button class="dropbtn" onclick="location.href='/noaa-fit-resources/about';" value="About" >About</button>
+       <button class="dropbtn" onclick="location.href='/noaa-fit-resources/contact';" value="Contact" >Contact</button>
+    </div>
+    <div class = "divider"></div>
+        <div class="mywrap">
+            
+              <img src="https://raw.githubusercontent.com/nmfs-ost/FIT-graphics/main/FIT_logo/logo_pngs/FIT_logo_2022_color_no_text.png" alt="NOAA Fisheries Integrated Toolbox Logo" height="75">&nbsp;&nbsp;&nbsp;
+            
+            <h2 class ="title">
+              Tool: asar (asar)
+            </h2>
+        </div>
+        <br>
+        <div class="mywrap">
+              
+                <button class = "codelink nolink" title="Online application unavailable">
+                Online Application
+                </button>
+              
+
+              
+                <button class = "codelink nolink" title="Downloadable application unavailable">
+                Download Application
+                </button>
+              
+
+              
+               <button class = "codelink" title="link to website" onclick=" window.open('https://nmfs-ost.github.io/asar/', '_blank'); return false;">
+                Website
+                </button>
+              
+
+
+              
+               <button class = "codelink" title="link to documentation" onclick=" window.open('https://nmfs-ost.github.io/asar/reference/index.html', '_blank'); return false;">
+                Documentation
+                </button>
+              
+
+              
+               <button class = "codelink" title="link to Code Repository" onclick=" window.open('https://github.com/nmfs-ost/asar', '_blank'); return false;">
+                Code Repository
+                </button>
+              
+
+
+              <!-- Stop using pdf download because the description is too general to
+              work well for folks using screen readers. -->
+              <!--  -->
+
+              
+              
+              <img class = "versionButton" alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/nmfs-ost/asar?color=%230093D0&include_prereleases&label=%20">
+              
+
+        </div>
+      <div class = "divider_thin">
+      </div>
+
+
+         
+        
+        <h3>Authors</h3>
+        <p>
+        Samantha Schiano, Sophie Breitbart, and Steve Saul
+        </p>
+        
+
+        
+        <h3>Contributors</h3>
+        <p>
+        Bai Li, Kathryn Doering
+        </p>
+        
+
+        <h3>Description</h3>
+        <p>
+          {asar} is an R package that partially automates a stock assessment report and facilitates actions accompanying the workflow including making documents accessible (a federal requirement). This package was developed out of a need for a more streamlined and efficient stock assessment process where the lowest hanging fruit was reporting. It standardizes while simultaneously allowing broader customizations needed for a particular stock or region's report. The need to make accessible documents in an automated fashion was a top priority, so heavy development and collaborations with Quarto developers brought about our solution in {asar} along with changes to industry.
+        </p>
+
+        
+
+        
+        <h3>
+          Installation Instructions
+        </h3>
+        <p>
+          <a href="https://github.com/nmfs-ost/asar/blob/main/README.md#installation">https://github.com/nmfs-ost/asar/blob/main/README.md#installation</a>
+        </p>
+        
+
+        
+        <h3>
+        Associated Tools
+        </h3>
+            <ul id = "associated_tools">
+            
+              <li><a href="https://github.com/nmfs-ost/stockplotr">stockplotr</a></li>
+            
+            </ul>
+        
+
+          
+
+          
+          <h3>
+          Citation
+          </h3>
+            <p>Schiano S, Breitbart S, Saul S (2026). asar: Build NOAA Stock Assessment Report. R package version 2.2.0.9000, <a href="https://github.com/nmfs-ost/asar">https://github.com/nmfs-ost/asar</a>.</p>
+          
+          
+          <h3>
+          Code Repository Badges
+          </h3>
+            
+            <img class="software_badge" src="https://www.repostatus.org/badges/latest/active.svg" alt="Repository status badge showing that the project is active.">
+            <br>
+            
+            <img class="software_badge" src="https://github.com/nmfs-ost/asar/tree/badges" alt="Code coverage and badge links for the asar repository.">
+            <br>
+            
+            <img class="software_badge" src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle badge for the asar project.">
+            <br>
+            
+          
+                  
+          <h3>
+          Keywords
+          </h3>
+          
+          <ul>
+          
+            <li>Fisheries</li>
+          
+            <li>R Package</li>
+          
+            <li>Standardized Reporting</li>
+          
+            <li>Stock Assessment Tool</li>
+          
+            <li>Utility Tools</li>
+          
+          </ul>
+          
+
+          <div class = "divider"></div>
+          <a class = "mylink" href = "https://nmfs-ost.github.io/noaa-fit/site-index">Site Index</a>
+          <div class = "divider"></div>
+        <footer >
+         <img src="https://raw.githubusercontent.com/nmfs-ost/FIT-graphics/main/NOAA_logos/noaa-fisheries-rgb-2line-horizontal-small.png" height="75" alt="NOAA Fisheries">
+         <div class="mywrap_center">
+          <a class ="mylink line" href="https://www.commerce.gov/">U.S. Department of Commerce</a>
+         <a class ="mylink line" href="https://www.noaa.gov">National Oceanographic and Atmospheric Administration</a>
+         <a class ="mylink" href="https://www.fisheries.noaa.gov/">NOAA Fisheries</a>
+         </div>
+
+        </footer>
+        <!-- <div class ="attribution">Icons by icons8 https://icons8.com/</div> -->
+
+    </div>
+
+
+</body>
+</html>
+
