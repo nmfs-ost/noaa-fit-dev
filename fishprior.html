@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) goes here for Prod site -->
-    <title>FIT tool: FishPath</title>
+    <title>FIT tool: fishprior</title>
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/nmfs-ost/FIT-graphics/main/FIT_logo/logo_pngs/FIT_favicon_2022_color.png">
    <link type="text/css" rel="stylesheet" href="./static/main.css" />
 
@@ -34,13 +34,13 @@
               <img src="https://raw.githubusercontent.com/nmfs-ost/FIT-graphics/main/FIT_logo/logo_pngs/FIT_logo_2022_color_no_text.png" alt="NOAA Fisheries Integrated Toolbox Logo" height="75">&nbsp;&nbsp;&nbsp;
             
             <h2 class ="title">
-              Tool: FishPath (FishPath)
+              Tool: fishprior (fishprior)
             </h2>
         </div>
         <br>
         <div class="mywrap">
               
-              <button class = "codelink" title="link to online application" onclick=" window.open('https://tool.fishpath.org/', '_blank'); return false;">
+                <button class = "codelink nolink" title="Online application unavailable">
                 Online Application
                 </button>
               
@@ -59,13 +59,13 @@
 
 
               
-               <button class = "codelink" title="link to documentation" onclick=" window.open('https://fishpath.github.io/FishPath-Tool-User-Guide/', '_blank'); return false;">
+               <button class = "codelink" title="link to documentation" onclick=" window.open('https://noaa-fims.github.io/fishprior/', '_blank'); return false;">
                 Documentation
                 </button>
               
 
               
-                <button class = "codelink nolink" title="Code Repository unavailable">
+               <button class = "codelink" title="link to Code Repository" onclick=" window.open('https://github.com/NOAA-FIMS/fishprior', '_blank'); return false;">
                 Code Repository
                 </button>
               
@@ -75,6 +75,9 @@
               work well for folks using screen readers. -->
               <!--  -->
 
+              
+              
+              <img class = "versionButton" alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/NOAA-FIMS/fishprior?color=%230093D0&include_prereleases&label=%20">
               
 
         </div>
@@ -86,7 +89,7 @@
         
         <h3>Authors</h3>
         <p>
-        The Nature Conservancy, NOAA, and CSIRO
+        Kelli Johnson, Jenny Bigman, Eric Ward
         </p>
         
 
@@ -94,25 +97,29 @@
 
         <h3>Description</h3>
         <p>
-          The FishPath Tool is an online decision-support tool for data-limited fisheries management. The primary goal of the FishPath Tool is to support users in understanding and refining options for the three major components of a harvest strategy: 1) data collection, 2) data-limited assessment, and 3) management measures. Once registered, you may access the FishPath Tool, including the FishPath questionnaire, interactive results tailored to your fishery, and supporting resources.
+          The fishprior R package provides a streamlined workflow for constructing Bayesian prior distributions for fish life-history parameters, using FishBase (and rfishbase). The package is structured around three steps: data retrieval, trait summarization, and prior construction.<br><br>Raw life-history data are queried from FishBase using the <code>get_fishbase_traits()</code> function. For a given vector of species names, the function retrieves five separate data tables from FishBase: von Bertalanffy growth parameters (popgrowth), population characteristics including maximum length and age (popchar), length-weight relationships (poplw), maturity schedules (maturity), and fecundity estimates (fecundity) and combines them into a single tidy long-format tibble. Each row in the resulting table corresponds to a single observation. Standard errors and sample sizes are provided for individual studies, and the reporting of this information varies by trait type.<br><br>For prior construction, raw data from FishBase needs to be aggregated into a form that is useful for prior construction. The <code>summarize_fishbase_traits()</code> function aggregates raw trait data at the species level for eight life-history parameters commonly encountered in fish stock assessments: asymptotic length (L∞), the von Bertalanffy growth coefficient (k), natural mortality (M), maximum length (Lmax), maximum age (tmax), length at maturity (Lm), age at maturity (tm), and mean fecundity. For each species–trait combination, the function returns both arithmetic and log-scale summary statistics (mean and standard deviation), with the log-scale summaries computed after excluding non-positive values.<br><br>The fishprior package constructs priors using a custom S4 class, which stores the distributional family, parameter values, trait name, prior type (informative or diffuse), grouping variable (typically species), and the underlying data. Two families of prior are currently supported: normal and lognormal, though future development will add a wider range of distributions.
         </p>
 
         
-        <h3>References</h3>
-            <ul>
-              
-              <li>https://www.fisheries.noaa.gov/feature-story/sharing-tools-sustainable-fishery-management</li>
-              
-              <li>Dowling, N., Wilson, J., Rudd, M., Babcock, E., Caillaux, M., Cope, J., Dougherty, D., Fujita, R., Gedamke, T., Gleason, M., Guttierrez, M., Hordyk, A., Maina, G., Mous, P., Ovando, D., Parma, A., Prince, J., Revenga, C., Rude, J., et al. (2016). FishPath: A Decision Support System for Assessing and Managing Data- and Capacity- Limited Fisheries. Assessing and Managing Data-Limited Fish Stocks. <a href="https://doi.org/10.4027/amdlfs.2016.03">https://doi.org/10.4027/amdlfs.2016.03</a>
-</li>
-              
-              <li></li>
-              
+
+        
+        <h3>
+          Installation Instructions
+        </h3>
+        <p>
+          The fishprior package can be installed via remotes, devtools, pak, or similar packages. The general syntax is:<br><br><code>pak::pak("NOAA-FIMS/fishprior")</code>
+        </p>
+        
+
+        
+        <h3>
+        Associated Tools
+        </h3>
+            <ul id = "associated_tools">
+            
+              <li><a href="https://github.com/NOAA-FIMS/FIMS">FIMS</a></li>
+            
             </ul>
-        
-
-        
-
         
 
           
@@ -121,9 +128,22 @@
           <h3>
           Citation
           </h3>
-            <p>Dowling, N. A., Wilson, J. R., Cope, J. M., Dougherty, D. T., Lomonico, S., Revenga, C., Snouffer, B. J., Salinas, N. G., Torres‐Cañete, F., Chick, R. C., Fowler, A. M., & Parma, A. M. (2022). The <scp>FishPath</scp> approach for fisheries management in a data‐ and capacity‐limited world. Fish and Fisheries, 24(2), 212–230. <a href="https://doi.org/10.1111/faf.12721">https://doi.org/10.1111/faf.12721</a>
-</p>
+            <p><a href="https://github.com/NOAA-FIMS/fishprior/blob/main/inst/CITATION">https://github.com/NOAA-FIMS/fishprior/blob/main/inst/CITATION</a></p>
           
+          
+          <h3>
+          Code Repository Badges
+          </h3>
+            
+            <img class="software_badge" src="https://github.com/noaa-fims/fishprior/actions/workflows/call-r-cmd-check.yml/badge.svg" alt="R-CMD-check">
+            <br>
+            
+            <img class="software_badge" src="https://codecov.io/gh/NOAA-FIMS/fishprior/branch/main/graph/badge.svg" alt="Codecov test coverage">
+            <br>
+            
+            <img class="software_badge" src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental">
+            <br>
+            
           
                   
           <h3>
@@ -132,13 +152,15 @@
           
           <ul>
           
-            <li>Data Limited Method</li>
+            <li>Bayesian Modeling</li>
           
-            <li>Decision Support Tool</li>
+            <li>Data Exploration</li>
+          
+            <li>Fish Biology</li>
           
             <li>Fisheries</li>
           
-            <li>Web App</li>
+            <li>R Package</li>
           
           </ul>
           
