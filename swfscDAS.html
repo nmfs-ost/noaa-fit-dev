@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) goes here for Prod site -->
-    <title>FIT tool: FishPath</title>
+    <title>FIT tool: swfscDAS - Processing DAS Data Files</title>
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/nmfs-ost/FIT-graphics/main/FIT_logo/logo_pngs/FIT_favicon_2022_color.png">
    <link type="text/css" rel="stylesheet" href="./static/main.css" />
 
@@ -34,13 +34,13 @@
               <img src="https://raw.githubusercontent.com/nmfs-ost/FIT-graphics/main/FIT_logo/logo_pngs/FIT_logo_2022_color_no_text.png" alt="NOAA Fisheries Integrated Toolbox Logo" height="75">&nbsp;&nbsp;&nbsp;
             
             <h2 class ="title">
-              Tool: FishPath (FishPath)
+              Tool: swfscDAS - Processing DAS Data Files (swfscDAS)
             </h2>
         </div>
         <br>
         <div class="mywrap">
               
-              <button class = "codelink" title="link to online application" onclick=" window.open('https://tool.fishpath.org/', '_blank'); return false;">
+                <button class = "codelink nolink" title="Online application unavailable">
                 Online Application
                 </button>
               
@@ -52,20 +52,20 @@
               
 
               
-                <button class = "codelink nolink" title="Website unavailable">
+               <button class = "codelink" title="link to website" onclick=" window.open('https://swfsc.github.io/swfscDAS/index.html', '_blank'); return false;">
                 Website
                 </button>
               
 
 
               
-               <button class = "codelink" title="link to documentation" onclick=" window.open('https://fishpath.github.io/FishPath-Tool-User-Guide/', '_blank'); return false;">
+               <button class = "codelink" title="link to documentation" onclick=" window.open('https://swfsc.github.io/swfscDAS/reference/index.html', '_blank'); return false;">
                 Documentation
                 </button>
               
 
               
-                <button class = "codelink nolink" title="Code Repository unavailable">
+               <button class = "codelink" title="link to Code Repository" onclick=" window.open('https://github.com/SWFSC/swfscDAS', '_blank'); return false;">
                 Code Repository
                 </button>
               
@@ -75,6 +75,9 @@
               work well for folks using screen readers. -->
               <!--  -->
 
+              
+              
+              <img class = "versionButton" alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/SWFSC/swfscDAS?color=%230093D0&include_prereleases&label=%20">
               
 
         </div>
@@ -86,7 +89,7 @@
         
         <h3>Authors</h3>
         <p>
-        The Nature Conservancy, NOAA, and CSIRO
+        Samuel Woodman
         </p>
         
 
@@ -94,24 +97,38 @@
 
         <h3>Description</h3>
         <p>
-          The FishPath Tool is an online decision-support tool for data-limited fisheries management. The primary goal of the FishPath Tool is to support users in understanding and refining options for the three major components of a harvest strategy: 1) data collection, 2) data-limited assessment, and 3) management measures. Once registered, you may access the FishPath Tool, including the FishPath questionnaire, interactive results tailored to your fishery, and supporting resources.
+          This package contains functions designed for processing and analyzing shipboard DAS data. This package was originally designed to handle [DAS data](https://swfsc-publications.fisheries.noaa.gov/publications/TM/SWFSC/NOAA-TM-NMFS-SWFSC-305.PDF) collected using WinCruz, the ship-based line-transect data collection software developed by the Southwest Fisheries Science Center. However, the swfscDAS package can be used by anyone who has collected DAS data that meets the format requirements described in the [‘DAS data format’](https://swfsc.github.io/swfscDAS/#DAS-data-format) section below, for instance to process decades of available NOAA Fisheries DAS survey data.
         </p>
 
         
         <h3>References</h3>
             <ul>
               
-              <li>https://www.fisheries.noaa.gov/feature-story/sharing-tools-sustainable-fishery-management</li>
-              
-              <li>Dowling, N., Wilson, J., Rudd, M., Babcock, E., Caillaux, M., Cope, J., Dougherty, D., Fujita, R., Gedamke, T., Gleason, M., Guttierrez, M., Hordyk, A., Maina, G., Mous, P., Ovando, D., Parma, A., Prince, J., Revenga, C., Rude, J., et al. (2016). FishPath: A Decision Support System for Assessing and Managing Data- and Capacity- Limited Fisheries. Assessing and Managing Data-Limited Fish Stocks. <a href="https://doi.org/10.4027/amdlfs.2016.03">https://doi.org/10.4027/amdlfs.2016.03</a>
-</li>
-              
-              <li>Crosman, K. M., Dowling, N. A., & Bostrom, A. (2020). The effects of Fishpath, a multi-stakeholder decision-support tool, on stakeholder buy-in to management in data-limited fisheries. Marine Policy, 122, 104215. <a href="https://doi.org/10.1016/j.marpol.2020.104215">https://doi.org/10.1016/j.marpol.2020.104215</a>
-</li>
+              <li>https://repository.library.noaa.gov/view/noaa/3174</li>
               
             </ul>
         
 
+        
+        <h3>
+          Installation Instructions
+        </h3>
+        <p>
+          You can install the released version of `swfscDAS` from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("swfscDAS")
+```
+
+You can install the developmental version of `swfscDAS` from [GitHub](https://github.com) with:
+
+``` r
+# install.packages("pak")
+pak::install_github("swfsc/swfscDAS")
+```
+
+Note that `pak` is recommended here because of occassional issues using `remotes` from government computers.
+        </p>
         
 
         
@@ -122,9 +139,17 @@
           <h3>
           Citation
           </h3>
-            <p>Dowling, N. A., Wilson, J. R., Cope, J. M., Dougherty, D. T., Lomonico, S., Revenga, C., Snouffer, B. J., Salinas, N. G., Torres‐Cañete, F., Chick, R. C., Fowler, A. M., & Parma, A. M. (2022). The <scp>FishPath</scp> approach for fisheries management in a data‐ and capacity‐limited world. Fish and Fisheries, 24(2), 212–230. <a href="https://doi.org/10.1111/faf.12721">https://doi.org/10.1111/faf.12721</a>
+            <p>Woodman, S. (2020). swfscDAS: Processing DAS Data Files [Dataset]. In (Editor), CRAN: Contributed Packages. The R Foundation. <a href="https://doi.org/10.32614/cran.package.swfscdas">https://doi.org/10.32614/cran.package.swfscdas</a>
 </p>
           
+          
+          <h3>
+          Code Repository Badges
+          </h3>
+            
+            <img class="software_badge" src="https://www.r-pkg.org/badges/version/swfscDAS" alt="CRAN version">
+            <br>
+            
           
                   
           <h3>
@@ -133,13 +158,11 @@
           
           <ul>
           
-            <li>Data Limited Method</li>
+            <li>Data Exploration</li>
           
-            <li>Decision Support Tool</li>
+            <li>Marine Mammals</li>
           
-            <li>Fisheries</li>
-          
-            <li>Web App</li>
+            <li>R Package</li>
           
           </ul>
           
