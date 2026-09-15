@@ -61,6 +61,14 @@
             </div>
           </div>
 
+          <div class="dropdown">
+            <button class="dropbtn">Filter tools by quality checks</button>
+            <div class="dropdown-content">
+              <input type="button" value="Passed" onclick="qualityCheckSearch('Yes')">
+              <input type="button" value="In Progress" onclick="qualityCheckSearch('In_Progress')">
+            </div>
+          </div>
+
           <!-- // Filter by keywords
                // To update this, run parsejson.R get_html_snippet()
                // And copy/paste over the output below div class= "tab-content" -->
@@ -133,10 +141,11 @@
       
         <div class ="boxcontainer">
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= AcousticThresholds> AcousticThresholds </a>
               <div class = "longTitle">Technical Guidance for Assessing the Effects of Anthropogenic Sound on Marine Mammal Hearing </div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -164,10 +173,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= ADMB> ADMB </a>
               <div class = "longTitle">AD Model Builder</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -201,10 +211,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= adnuts> adnuts </a>
               <div class = "longTitle">AD no U-turn sampling</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -234,10 +245,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= AgeingError> AgeingError </a>
               <div class = "longTitle">Ageing Error</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -269,10 +281,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= AGEPRO> AGEPRO </a>
               <div class = "longTitle">Age Structured Projection Model Calculation Engine</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -300,10 +313,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= AGEPRO-GUI> AGEPRO-GUI </a>
               <div class = "longTitle">Age Structured Projection Model User Interface</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -333,10 +347,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= agTrend> agTrend </a>
               <div class = "longTitle">A Bayesian approach for estimating trends of aggregated abundance</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -364,10 +379,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= ASAP> ASAP </a>
               <div class = "longTitle">Age Structured Assessment Program</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -397,10 +413,15 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="Yes">
               
               <a class = "shortTitle" href= asar> asar </a>
               <div class = "longTitle">asar</div>
+                
+                <div style="text-align: center;">
+                  <img src="https://img.shields.io/badge/FIT_quality_checks-Passed-759A06" alt="A software badge showing that this tool has passed the FIT quality checks">
+                </div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -436,10 +457,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= ATL> ATL </a>
               <div class = "longTitle">Analytics Template Library</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -469,10 +491,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= Atlantis> Atlantis </a>
               <div class = "longTitle">Atlantis</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -502,10 +525,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= bayesdfa> bayesdfa </a>
               <div class = "longTitle">Bayesian Dynamic Factor Analysis with Stan</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -535,10 +559,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= bycatch> bycatch </a>
               <div class = "longTitle">bycatch</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -568,10 +593,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= CASAL2> CASAL2 </a>
               <div class = "longTitle">C++ Algorithmic Stock Assessment Laboratory version 2</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -601,10 +627,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= DisMAP> DisMAP </a>
               <div class = "longTitle">The Distribution Mapping and Analysis Portal</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -632,10 +659,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= Donut_Tool> Donut_Tool </a>
               <div class = "longTitle">Prey Preference and Diet Composition Tool</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -661,10 +689,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= EcoCast> EcoCast </a>
               <div class = "longTitle">EcoCast</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -702,10 +731,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= eSDM> eSDM </a>
               <div class = "longTitle">Ensemble tool for predictions from Species Distribution Models</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -737,10 +767,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= EwE> EwE </a>
               <div class = "longTitle">Ecopath with Ecosim</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -766,10 +797,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= FIMS> FIMS </a>
               <div class = "longTitle">The Fisheries Integrated Modeling System</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -803,10 +835,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= FishEconProdOutput> FishEconProdOutput </a>
               <div class = "longTitle">Price Method Fisheries Economics Total Factor Productivity Outputs for the U.S. Fisheries</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -834,10 +867,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= fisheye> fisheye </a>
               <div class = "longTitle">Fisheries Economic Explorer</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -865,10 +899,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= FishLife> FishLife </a>
               <div class = "longTitle">FishLife</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -904,10 +939,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= FishPath> FishPath </a>
               <div class = "longTitle">FishPath</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -941,10 +977,15 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="In_Progress">
               
               <a class = "shortTitle" href= fishprior> fishprior </a>
               <div class = "longTitle">fishprior</div>
+                
+                <div style="text-align: center;">
+                  <img src="https://img.shields.io/badge/FIT_quality_checks-In_Progress-white" alt="A software badge showing that this tool is currently under review for the FIT quality checks">
+                </div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -980,10 +1021,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= FishSET> FishSET </a>
               <div class = "longTitle">Spatial Economics Toolbox for Fisheries</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1017,10 +1059,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= GADGET> GADGET </a>
               <div class = "longTitle">Globally applicable Area-Disaggregated General Ecosystem Toolbox</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1052,10 +1095,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= ghactions4r> ghactions4r </a>
               <div class = "longTitle">ghactions4r</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1083,10 +1127,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= ghBackup> ghBackup </a>
               <div class = "longTitle">ghBackup</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1114,10 +1159,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= glmmfields> glmmfields </a>
               <div class = "longTitle">Spatial GLMMs in R with Stan</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1145,10 +1191,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= GMACS> GMACS </a>
               <div class = "longTitle">General Model for Assessing Crustacean Stocks</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1176,10 +1223,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= LHSampling> LHSampling </a>
               <div class = "longTitle">Life History Sampling</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1211,10 +1259,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= MARSS> MARSS </a>
               <div class = "longTitle">Multivariate Autoregressive State-Space Modeling with R</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1244,10 +1293,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= MIZER> MIZER </a>
               <div class = "longTitle">Multi-species size spectrum modelling in R</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1279,10 +1329,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= MSCAA> MSCAA </a>
               <div class = "longTitle">Multi-Species Statistical Catch-At-Age</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1316,10 +1367,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= MSSPM> MSSPM </a>
               <div class = "longTitle">Multi-Species Surplus Production Model</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1351,10 +1403,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= MSVPA_X2> MSVPA_X2 </a>
               <div class = "longTitle">Multi-Species Virtual Population Analysis eXtended 2</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1386,10 +1439,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= nmfSharedUtilities> nmfSharedUtilities </a>
               <div class = "longTitle">nmfSharedUtilities</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1421,10 +1475,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= nmfspalette> nmfspalette </a>
               <div class = "longTitle">nmfspalette</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1456,10 +1511,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= NWCTrends> NWCTrends </a>
               <div class = "longTitle">Standardized trends metrics for listed PNW salmonids</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1493,10 +1549,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= ObsCovgTools> ObsCovgTools </a>
               <div class = "longTitle">Observer Coverage Simulator Tool</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1530,10 +1587,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= OSMOSE> OSMOSE </a>
               <div class = "longTitle">Object-oriented Simulator of Marine Ecosystems</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1565,10 +1623,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= phenomix> phenomix </a>
               <div class = "longTitle">phenomix</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1600,10 +1659,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= phylosem> phylosem </a>
               <div class = "longTitle">R package for phylogenetic structural equation models</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1635,10 +1695,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= PSA> PSA </a>
               <div class = "longTitle">Productivity and Susceptibility Analysis (Shiny Version)</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1674,10 +1735,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= pycax> pycax </a>
               <div class = "longTitle">pycax: Python client for the Coordinated Assessment Program CAX database REST API</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1711,10 +1773,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= r4MAS> r4MAS </a>
               <div class = "longTitle">R interface to Metapopulation Assessment System</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1742,10 +1805,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= r4ss> r4ss </a>
               <div class = "longTitle">r4ss</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1777,10 +1841,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= rCAX> rCAX </a>
               <div class = "longTitle">rCAX: R client for the Coordinated Assessment HLI API</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1814,10 +1879,15 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="In_Progress">
               
               <a class = "shortTitle" href= Rceattle> Rceattle </a>
               <div class = "longTitle">Rceattle</div>
+                
+                <div style="text-align: center;">
+                  <img src="https://img.shields.io/badge/FIT_quality_checks-In_Progress-white" alt="A software badge showing that this tool is currently under review for the FIT quality checks">
+                </div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1855,10 +1925,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= REIA> REIA </a>
               <div class = "longTitle">Regional Economic Impact Analysis for North Pacific Fisheries</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1890,10 +1961,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= REMORA> REMORA </a>
               <div class = "longTitle">REsource Management Option Review and Analysis Tool</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1923,10 +1995,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= RPATH> RPATH </a>
               <div class = "longTitle">R implementation of the Ecopath with Ecosim</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -1962,10 +2035,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= SI> SI </a>
               <div class = "longTitle">SwimmingIndividuals</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -2005,10 +2079,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= SIFC> SIFC </a>
               <div class = "longTitle">Social Indicators for Fishing Communities</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -2038,10 +2113,15 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="Yes">
               
               <a class = "shortTitle" href= SPoRC> SPoRC </a>
               <div class = "longTitle">SPoRC</div>
+                
+                <div style="text-align: center;">
+                  <img src="https://img.shields.io/badge/FIT_quality_checks-Passed-759A06" alt="A software badge showing that this tool has passed the FIT quality checks">
+                </div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -2079,10 +2159,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= SS-DL_Tool> SS-DL_Tool </a>
               <div class = "longTitle">Stock Synthesis - Data Limited Tool</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -2116,10 +2197,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= SS3> SS3 </a>
               <div class = "longTitle">Stock Synthesis</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -2153,10 +2235,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= SSMSE> SSMSE </a>
               <div class = "longTitle">Management Strategy Evaluation for SS3</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -2190,10 +2273,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= StockSMART> StockSMART </a>
               <div class = "longTitle">Stock Status, Management, Assessments & Resource Trends</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -2221,10 +2305,15 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="In_Progress">
               
               <a class = "shortTitle" href= swfscDAS> swfscDAS </a>
               <div class = "longTitle">swfscDAS - Processing DAS Data Files</div>
+                
+                <div style="text-align: center;">
+                  <img src="https://img.shields.io/badge/FIT_quality_checks-In_Progress-white" alt="A software badge showing that this tool is currently under review for the FIT quality checks">
+                </div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -2254,10 +2343,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= TPW> TPW </a>
               <div class = "longTitle">Top Predator Watch</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -2293,10 +2383,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= VAST> VAST </a>
               <div class = "longTitle">Vector Autoregressive Spatio-Temporal Model</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -2330,10 +2421,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= VES-V> VES-V </a>
               <div class = "longTitle">Virtual Ecosystem Scenario Viewer</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -2367,10 +2459,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= VRAP> VRAP </a>
               <div class = "longTitle">Viability and Risk Assessment Procedure</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -2406,10 +2499,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= WHAM> WHAM </a>
               <div class = "longTitle">Woods Hole Assessment Model</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -2443,10 +2537,11 @@
               
           </div>
           
-          <div class = "box">
+          <div class = "box" data-fit-reviewed="No">
               
               <a class = "shortTitle" href= WW2.0> WW2.0 </a>
               <div class = "longTitle">WhaleWatch 2.0</div>
+                
               <div class = "toolbox_drawers">
                 <h3>Toolbox drawer(s):</h3>
                 <ul>
@@ -2559,6 +2654,18 @@
                 }
             }
         }
+
+          function qualityCheckSearch(status) {
+            var box, i;
+            box = document.getElementsByClassName("box");
+            for (i = 0; i < box.length; i++) {
+              if (box[i].dataset.fitReviewed === status) {
+                box[i].style.display = "";
+              } else {
+                box[i].style.display = "none";
+              }
+            }
+          }
 
         function resetSearch() {
             var box, i;
